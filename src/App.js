@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HompePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/Header.component';
+import SignPage from './pages/signpage/signpage.component';
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route>
             <Route exact path='/' element={<HompePage />} />
             <Route exact path='/shop' element={<ShopPage />} />
+            <Route exact path='/signin' element={<SignPage/>} />
           </Route>
         </Routes>
 
