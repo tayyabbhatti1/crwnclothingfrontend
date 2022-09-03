@@ -1,8 +1,10 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 import HompePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/Header.component';
 
 
 
@@ -10,11 +12,20 @@ import ShopPage from './pages/shop/shop.component';
 function App() {
   return (
     <div >
-       <HompePage/>
-       <ShopPage/>
-     
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route>
+            <Route exact path='/' element={<HompePage />} />
+            <Route exact path='/shop' element={<ShopPage />} />
+          </Route>
+        </Routes>
+
+      </BrowserRouter>
+
+
     </div>
-      
+
   );
 }
 

@@ -1,5 +1,6 @@
 
 import React,{Component} from "react";
+import './shop.style.scss'
 
 import CollectionPreview from "../../components/collectionpreview/collection-preview.component";
 
